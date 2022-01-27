@@ -1,0 +1,16 @@
+beautifulsoup4==4.9.3
+bleach==3.3.0
+boto3==1.18.7
+botocore==1.21.7
+dateparser==1.0.0
+feedparser==6.0.2
+html2text==2020.1.16
+metadata-parser==0.10.0
+pytz==2019.3
+requests==2.26.0
+requests-cache==0.5.2
+sentry-sdk==0.19.2
+unshortenit==0.4.0
+urllib3==1.26.6
+wasmer==1.0.0
+wasmer-compiler-cranelift==1.0.0

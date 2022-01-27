@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  pull_request
+
+jobs:
+  pull_request:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install ubuntu dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y yajl-tools
+      - name: Setup Python Version
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install Python dependencies
+        run: pip install -r requirements.dev.txt
+      - name: Run tests
+        run: CONCURRENCY=4 LOG_LEVEL=INFO make test
