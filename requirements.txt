@@ -13,3 +13,4 @@ unshortenit==0.4.0
 urllib3==1.26.6
 wasmer==1.0.0
 wasmer-compiler-cranelift==1.0.0
+better-profanity==0.7.0
